@@ -56,24 +56,15 @@ function App() {
               <Routes>
                 <Route
                   element={
-                    <Authenticated
-                      key="authenticated-inner"
-                      fallback={<CatchAllNavigate to="/login" />}
-                    >
                       <ThemedLayoutV2
                         Sider={() => null}  // Removendo o Sider
                       >
                         <Outlet />
                       </ThemedLayoutV2>
-                    </Authenticated>
                   }
                 >
-                  <Route
-                    index
-                    element={<NavigateToResource resource="blog_posts" />}
-                  />
-
-                  <Route path="/inspect">
+                
+                  <Route path="/">
                     <Route index element={<InspectTires />} />
                   </Route>
                   <Route path="*" element={<ErrorComponent />} />
