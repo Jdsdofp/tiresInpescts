@@ -33,7 +33,7 @@
   },
   "scripts": {
     "dev": "refine dev",
-    "build": "tsc && refine build",
+    "build": "npm run build",
     "start": "refine start",
     "refine": "refine"
   },
