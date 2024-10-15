@@ -32,9 +32,9 @@
     "vite": "^4.3.1"
   },
   "scripts": {
-    "dev": "refine dev",
+    "dev": "npm run dev",
     "build": "npm run build",
-    "start": "refine start",
+    "start": "npm run start",
     "refine": "refine"
   },
   "browserslist": {
